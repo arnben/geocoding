@@ -8,4 +8,7 @@ public class GeocodingExternalServiceException extends RuntimeException {
 		super(message, e);
 	}
 	
+	public GeocodingExternalServiceException(String message) {
+		super(message);
+	}
 }

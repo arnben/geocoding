@@ -27,6 +27,7 @@ public class NominatimGeocodingExternalService implements GeocodingExternalServi
 		} catch (RestClientException e) {
 			throw new GeocodingExternalServiceException("Error communicating with Nominatim server", e);
 		} 
+		
 	}
 	
 	private AddressInfo convertToAddressInfo(double lat, double lng, NominatimResponse response) {
